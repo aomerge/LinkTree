@@ -1,0 +1,107 @@
+main section.HeaderStatic{    
+    padding: 7px 0px;
+    display: flex;    
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    left: 15%;
+    width: 70%;
+    border-radius: 200px;    
+    animation: HeaderStatic linear;
+    animation-timeline: scroll(root block);
+    z-index: 2;
+    div{
+        margin: 0px 40px;
+        h1{
+            color: var(--primary);
+            font-size: 20px;
+            font-weight: 700;
+        }
+        button{
+            background-color: var(--trasparent);
+            border: none;
+            color: var(--white);
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+    div.HeaderStatic_img{
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 3px solid var(--graddient-blue-red);
+        animation: HeaderStatic_Scale linear;
+        animation-timeline: scroll(root block);
+        img{
+            width: 100%;            
+        }
+    }
+    div.HeaderStatic_text{                
+        animation: HeaderStatic_Scale linear;
+        animation-timeline: scroll(root block);
+        p{
+            font-size: 25px;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    div.HeaderStatic_btn{
+        animation: HeaderStatic_Scale linear;
+        animation-timeline: scroll(root block);
+        button{
+            height: 40px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border-radius: 200px;
+            background-color: var(--black);
+            border: none;
+            color: var(--white);                        
+            font-weight: 700;
+            cursor: pointer;
+        }
+    
+    }
+
+}
+
+// animation
+@keyframes HeaderStatic { 
+    0% { 
+        border: none;
+        background-color: none;
+        scale: .9;
+    }
+    100% {       
+        scale: 1;  
+        border: 1px solid var(--primary);
+        background-color: var(--glass);
+    }
+}
+@keyframes HeaderStatic_Scale {
+    0% {
+        scale: 0;
+    }
+    50%{
+        scale: 1;
+    }
+    100% {
+        scale: 1;
+    }
+
+    
+}
+// animation-timeline
+@keyframes scroll {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}

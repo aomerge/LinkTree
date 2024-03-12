@@ -1,14 +1,16 @@
 import React from "react";
+import './elements.scss'; 
 import { NavPoint } from "../../../../public/svg/nav.tsx";
-const BtnLink = ( {text, img}: {text:any,img?: any}) => {    
+
+const BtnLink = ({ text, img }: {text:string, img?:any}) => {
   return (
-    <div className="BtnLink">
+    <section className="btnLink">
       <img src={img} alt="" />
       <p>{text}</p>
       <button>
         <NavPoint />
       </button>
-    </div>
+    </section>
   );
 };
 

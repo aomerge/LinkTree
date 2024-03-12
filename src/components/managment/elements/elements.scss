@@ -1,0 +1,123 @@
+@import url(../../../../public/css/Colors.scss);
+
+main {
+    section.Banner_Element{
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        img{
+            width: 100%;    
+            transform:translate(0px, 200px);        
+        }
+    }
+    section.btnLink{
+        background-color: var(--white);
+        width: 100%;        
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        color: var(--black);
+        button{                        
+            background-color: transparent;
+            border: none;            
+        }
+        button{
+            margin-right: 20px;
+        }
+    }
+    section.About{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        div.About_img{
+            width: 340px;
+            height: 340px;
+            overflow: hidden;
+            border-radius: 300px;
+            img{
+                width: 100%;
+            }
+        }
+        div.About_text{
+            width: 100%;
+            h1{
+                margin: 0;
+                text-align: center;
+                color: var(--primary);
+                font-size: 40px;
+                font-weight: 700;
+            }
+            p{
+                font-size: 15px;                
+            }
+        }
+    }
+    section.About_bettwent{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;        
+        div.About_img{
+            width: 50%;
+            height: 340px;
+            overflow: hidden;
+            border-radius: 300px;
+            img{
+                width: 100%;
+            }
+        }
+        div.About_text{
+            width: 50%;
+            h1{
+                color: var(--primary);
+                font-size: 20px;
+                font-weight: 700;
+            }
+            p{
+                font-size: 15px;                
+            }
+        }
+    }
+    section.socialMedia{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 20px;
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            a{
+                width: 20px;
+                height: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 200px;
+                background-color: var(--primary);
+                color: var(--white);
+                padding: 10px;
+                font-size: 20px;
+                svg{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+        }        
+    }
+}

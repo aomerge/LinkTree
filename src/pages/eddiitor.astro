@@ -1,31 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
-import BtnLink from "../components/managment/elements/btnLink.jsx";
-import Banner from "../components/managment/elements/banner.tsx";
-import HeaderStatic from "../components/managment/static/nav.tsx";
-import About from "../components/managment/elements/about.tsx";
-import SocialMedia  from "../components/managment/elements/social.tsx";
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
-    <HeaderStatic
-      text="aomerge"
-      img={"https://images.unsplash.com/photo-1710156762268-702a4829ea8f?q=80&w=1370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
-    />
-    <About
-		title="aomerge"
-		text="I'm a software developer, I like to create and share knowledge, I'm passionate about technology and I'm always looking for new challenges."
-		img={"https://images.unsplash.com/photo-1710156762268-702a4829ea8f?q=80&w=1370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
-    />
-    <Banner
-      img={"https://images.unsplash.com/photo-1710156762268-702a4829ea8f?q=80&w=1370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
-    />
-    <BtnLink text="Blog" />
-    <BtnLink text="Proyects" />
-    <BtnLink text="Cv" />    
-	<SocialMedia />
+    
+    <h1>Edditor</h1>
+    
   </main>
 </Layout>
 
@@ -39,7 +21,7 @@ import SocialMedia  from "../components/managment/elements/social.tsx";
     font-size: 20px;
     line-height: 1.6;
     display: grid;
-    gap: 20px;
+    gap: 2rem;
   }
   .astro-a {
     position: absolute;
@@ -82,7 +64,7 @@ import SocialMedia  from "../components/managment/elements/social.tsx";
     border-radius: 4px;
     padding: 0.3em 0.4em;
   }
-  .instructions strong {../components/managment/elements/SocialMedia.tsx
+  .instructions strong {
     color: rgb(var(--accent-light));
   }
   .link-card-grid {

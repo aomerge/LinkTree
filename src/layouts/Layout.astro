@@ -18,6 +18,11 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<slot />
+		<footer>
+			<h5>
+				Un proyecto desarrollado por <strong>{' aomerge'}</strong> 
+			</h5>
+		</footer>
 	</body>
 </html>
 <style is:global>
@@ -47,5 +52,17 @@ const { title } = Astro.props;
 			Bitstream Vera Sans Mono,
 			Courier New,
 			monospace;
+	}
+	footer {						
+		text-align: center;
+		padding: 1rem;
+		background: #13151a;
+		color: white;
+	}
+	footer h5 {
+		margin: 0;
+	}
+	footer h5 strong {
+		color: rgb(var(--accent));
 	}
 </style>
